@@ -1,0 +1,47 @@
+.heart {
+	width: 200px;
+	height: 200px;
+	top:50%;
+	left:50%;
+	z-index:1;
+	display:block;
+	position:absolute;
+	transform: translate(-50%,-50%);
+	animation: heart 1s ease infinite
+}
+.chu {
+	text-align: center;
+	color: blue;
+	top: 490px;
+	left: 570px;
+	 position:absolute ;
+	 font-weight: bold;
+	 font-size: 20px;
+}
+@keyframes heart{
+	96%{
+		transform: translate(-50%,-50%) scale(.8,.8)
+	}
+	100%{
+		transform: translate(-50%,-50%) scale(1,1)
+	}
+}
+.heart div{
+	background: #ff0000;
+	width: 71px;
+	height: 126px;
+	top: 40px;
+	display: block;
+	position: absolute;
+	border-radius: 50%;
+}
+.left {
+	left: 45px;
+	transform: rotate(330deg);
+	
+}
+.right {
+	right: 45px;
+	transform: rotate(30deg);
+}
+
